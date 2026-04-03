@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Phishing Detection Report</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:monospace;background:#0d1117;color:#c9d1d9;padding:2rem}
+    h1{color:#58a6ff;margin-bottom:.5rem}
+    .meta{color:#8b949e;font-size:.85em;margin-bottom:1.5rem}
+    .summary{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+    .badge{border:1px solid;border-radius:8px;padding:.5rem 1.2rem;
+            display:flex;flex-direction:column;align-items:center;min-width:110px}
+    .badge span{font-size:.75em}
+    .badge strong{font-size:1.6em}
+    table{width:100%;border-collapse:collapse;font-size:.82em}
+    th{background:#161b22;color:#58a6ff;padding:.6rem .5rem;text-align:left}
+    td{padding:.5rem;border-bottom:1px solid #21262d;vertical-align:top}
+    tr:hover{background:#161b22}
+    ul{list-style:disc;margin:.3rem 0}
+    li{margin:.2rem 0;line-height:1.4}
+  </style>
+</head>
+<body>
+  <h1>AI Phishing Detection Report</h1>
+  <div class='meta'>
+    Generated: 2026-04-03 10:34 |
+    Total Analyzed: 9 |
+    Phishing Detected: 1
+  </div>
+  <div class='summary'><div class='badge' style='border-color:#2ecc71'><span style='color:#2ecc71'>SAFE</span><strong>2</strong></div><div class='badge' style='border-color:#e67e22'><span style='color:#e67e22'>SUSPICIOUS</span><strong>2</strong></div><div class='badge' style='border-color:#e67e22'><span style='color:#e67e22'>LIKELY</span><strong>4</strong></div><div class='badge' style='border-color:#e74c3c'><span style='color:#e74c3c'>PHISHING</span><strong>1</strong></div></div>
+  <table>
+    <thead><tr>
+      <th>Target</th><th>Type</th><th>Verdict</th>
+      <th>Score</th><th>Indicators</th>
+    </tr></thead>
+    <tbody>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>http://paypa1-secure-login.tk/account/verify</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>SUSPICIOUS</td>
+              <td style='color:#e67e22;font-weight:bold'>50/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious TLD: Domain uses high-risk TLD: .tk <em>(+20)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Malicious Pattern: Known phishing URL pattern: 'secure-login' <em>(+20)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> No HTTPS: URL uses unencrypted HTTP <em>(+10)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>https://192.168.1.100/apple-id/reset</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>SUSPICIOUS</td>
+              <td style='color:#e67e22;font-weight:bold'>25/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> URL Structure: IP address used instead of domain name <em>(+25)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>http://amazon-account-suspended.xyz/update/billing</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>LIKELY</td>
+              <td style='color:#e67e22;font-weight:bold'>75/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious TLD: Domain uses high-risk TLD: .xyz <em>(+20)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Brand Impersonation: Brand name 'amazon' in untrusted domain <em>(+25)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Malicious Pattern: Known phishing URL pattern: 'account-suspended' <em>(+20)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> No HTTPS: URL uses unencrypted HTTP <em>(+10)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>https://www.google.com</td>
+              <td>URL</td>
+              <td style='color:#2ecc71;font-weight:bold'>SAFE</td>
+              <td style='color:#2ecc71;font-weight:bold'>-30/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>http://secure-bankofamerica-login.com/signin</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>LIKELY</td>
+              <td style='color:#e67e22;font-weight:bold'>55/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Brand Impersonation: Brand name 'bankofamerica' in untrusted domain <em>(+25)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Malicious Pattern: Known phishing URL pattern: '-login' <em>(+20)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> No HTTPS: URL uses unencrypted HTTP <em>(+10)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>https://github.com/Don-cybertech</td>
+              <td>URL</td>
+              <td style='color:#2ecc71;font-weight:bold'>SAFE</td>
+              <td style='color:#2ecc71;font-weight:bold'>-30/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>http://netflix-billing-update.top/payment</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>LIKELY</td>
+              <td style='color:#e67e22;font-weight:bold'>55/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious TLD: Domain uses high-risk TLD: .top <em>(+20)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Brand Impersonation: Brand name 'netflix' in untrusted domain <em>(+25)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> No HTTPS: URL uses unencrypted HTTP <em>(+10)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>https://microsoft-account-verify.ml/login</td>
+              <td>URL</td>
+              <td style='color:#e67e22;font-weight:bold'>LIKELY</td>
+              <td style='color:#e67e22;font-weight:bold'>65/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious TLD: Domain uses high-risk TLD: .ml <em>(+20)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Brand Impersonation: Brand name 'microsoft' in untrusted domain <em>(+25)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Malicious Pattern: Known phishing URL pattern: 'account-verify' <em>(+20)</em></li></ul></td>
+            </tr>
+            <tr>
+              <td style='word-break:break-all;max-width:200px'>Email: URGENT: Your PayPal Account Has Been Suspended</td>
+              <td>Email</td>
+              <td style='color:#e74c3c;font-weight:bold'>PHISHING</td>
+              <td style='color:#e74c3c;font-weight:bold'>100/100</td>
+              <td><ul style='padding-left:1rem;font-size:.8em'><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious Sender: Sender uses high-risk TLD: paypa1-support.tk <em>(+20)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Sender Impersonation: Claims to be 'paypal' but domain is 'paypa1-support.tk' <em>(+30)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> Urgency Tactics: Urgency keywords in subject: urgent, suspend <em>(+15)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> Phishing Subject: Known phishing phrase in subject: 'your paypal' <em>(+15)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Phishing Content: Phishing phrases detected: verify your account, confirm your identity, unusual activity <em>(+20)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> Urgency Tactics: Multiple urgency keywords: immediately, act now, final notice, suspend <em>(+15)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Sensitive Data Request: Requests sensitive info: password, credit card, date of birth <em>(+25)</em></li><li><span style='color:#e67e22'>[MEDIUM]</span> Generic Greeting: Impersonal greeting detected: 'dear customer' <em>(+10)</em></li><li><span style='color:#e74c3c'>[HIGH]</span> Suspicious Link: Phishing URL in body: http://paypa1-secure-login.tk/account/verify?user=victim@gmail.com <em>(+20)</em></li></ul></td>
+            </tr></tbody>
+  </table>
+</body>
+</html>
