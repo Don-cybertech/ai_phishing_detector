@@ -300,10 +300,19 @@ ai_phishing_detector/
 
 ---
 
-## Author
+## Author:
 
-**Egwu Donatus Achema** — Cybersecurity Student | Python Developer
-- GitHub: [@Don-cybertech](https://github.com/Don-cybertech)
+**Egwu Donatus Achema**
+
+ Cybersecurity Analyst | Python Developer
+ 
+**GitHub**: [@Don-cybertech](https://github.com/Don-cybertech)
+
+**LinkedIn**: (https://www.linkedin.com/in/egwu-donatus-achema-8a9251378/)
+
+**Gmail**: (donatusachema@gmail.com)
+
+Part of: Cybersecurity Portfolio
 
 > *"Think before you click."*
 
